@@ -1,0 +1,17 @@
+<html>
+    <!-- //How to generate all combinations of a string in JavaScript ? -->
+    <script>
+        function AllCombinationOfString(s){
+            const combinations =[];
+            for (let i =0; i<s.length;i++){
+                for(let j=i+1;j<s.length+1;j++){
+                    combinations.push(s.slice(i,j))
+                }
+
+            }
+            return combinations;
+        }
+       console.log( AllCombinationOfString('Dog'))
+
+    </script>
+</html>
